@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TicketCenterTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000合币兑换1元电费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPs-Bq-FEt">
+                        <rect key="frame" x="136" y="14" width="160" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Pdj-S1-P2l"/>
+                            <constraint firstAttribute="width" constant="160" id="Y47-Tj-puY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-Ԫ-" translatesAutoresizingMaskIntoConstraints="NO" id="oQK-4g-ehb">
+                        <rect key="frame" x="22" y="11" width="99" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="QgK-7D-kba"/>
+                            <constraint firstAttribute="width" constant="99" id="UIx-Xy-QGl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未使用" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2x-jJ-UPn">
+                        <rect key="frame" x="242" y="50" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="P6b-jG-ltP"/>
+                            <constraint firstAttribute="width" constant="70" id="Uaa-7f-aaX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.65490196079999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FD-3T-RGv">
+                        <rect key="frame" x="14" y="79" width="306" height="1"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Eg7-Sy-umI"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有效期至:2018.12.31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2O-fw-ps2">
+                        <rect key="frame" x="136" y="50" width="103" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6eH-bb-LXC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3FD-3T-RGv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="85B-IL-Sam"/>
+                    <constraint firstItem="o2O-fw-ps2" firstAttribute="leading" secondItem="oQK-4g-ehb" secondAttribute="trailing" constant="15" id="CKp-10-MtU"/>
+                    <constraint firstItem="hPs-Bq-FEt" firstAttribute="leading" secondItem="oQK-4g-ehb" secondAttribute="trailing" constant="15" id="EOS-Y5-Z6w"/>
+                    <constraint firstAttribute="bottom" secondItem="T2x-jJ-UPn" secondAttribute="bottom" constant="8.5" id="FPd-rQ-pV5"/>
+                    <constraint firstAttribute="bottom" secondItem="3FD-3T-RGv" secondAttribute="bottom" id="UM2-iL-s2p"/>
+                    <constraint firstItem="hPs-Bq-FEt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="dTQ-BN-gS3"/>
+                    <constraint firstItem="T2x-jJ-UPn" firstAttribute="leading" secondItem="o2O-fw-ps2" secondAttribute="trailing" constant="3" id="eBy-HE-qp4"/>
+                    <constraint firstAttribute="trailing" secondItem="T2x-jJ-UPn" secondAttribute="trailing" constant="8" id="eff-66-RIm"/>
+                    <constraint firstAttribute="trailing" secondItem="3FD-3T-RGv" secondAttribute="trailing" id="hjP-pR-F6Q"/>
+                    <constraint firstItem="hPs-Bq-FEt" firstAttribute="leading" secondItem="oQK-4g-ehb" secondAttribute="trailing" constant="15" id="msm-oK-Zhq"/>
+                    <constraint firstItem="oQK-4g-ehb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pFA-6m-IMk"/>
+                    <constraint firstItem="3FD-3T-RGv" firstAttribute="top" secondItem="o2O-fw-ps2" secondAttribute="bottom" constant="8" id="uI2-JL-Tp0"/>
+                    <constraint firstItem="oQK-4g-ehb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="xVq-kS-Psf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img" destination="oQK-4g-ehb" id="dSq-oD-hO3"/>
+                <outlet property="mark" destination="T2x-jJ-UPn" id="ixn-ih-G04"/>
+                <outlet property="time" destination="o2O-fw-ps2" id="aRa-bx-21e"/>
+                <outlet property="title" destination="hPs-Bq-FEt" id="VrF-pJ-HIb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1-Ԫ-" width="98" height="56"/>
+    </resources>
+</document>

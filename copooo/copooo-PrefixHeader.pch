@@ -1,0 +1,59 @@
+//
+//  copooo-PrefixHeader.pch
+//  copooo
+//
+//  Created by XiaMingjiang on 2018/1/15.
+//  Copyright © 2018年 世纪之光. All rights reserved.
+//
+
+#ifndef copooo_PrefixHeader_pch
+#define copooo_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "HColor.h"
+#import "HPublic.h"
+#import "UIView+Frame.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "Masonry.h"
+#import "BaseViewController.h"
+#import "StorageUserInfromation.h"
+#import "JGIsBlankString.h"
+#import "MBProgressHUD+NJ.h"
+#import "ZTHttpTool.h"
+#import "JGEncrypt.h"
+#import "MJExtension.h"
+#import "DictToJson.h"
+#import "YYModel.h"
+#import "IQKeyboardManager.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "MJRefresh.h"
+#import <UMMobClick/MobClick.h>
+#define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+
+#define KEY @"1234567812345678"
+#define BASE_URL  @"https://jujiahe.copticomm.com/appt" //外网测试
+#define BASE_URL2  @"https://jujiahe.copticomm.com" //外网测试
+//#define BASE_H5_URL  @"https://jujiahe.copticomm.com/jujiaheDocument/H5/post/test/index.html" //外网测试
+#define BASE_SHARE @"https://jujiahe.copticomm.com/jujiaheDocument/jujiaheuser/dailyShare/test/index.html"//外网测试
+
+//#define BASE_URL  @"https://jujiahe.copticomm.com/app" //外网正式
+//#define BASE_URL2  @"https://jujiahe.copticomm.com" //外网正式
+//#define BASE_H5_URL  @"https://jujiahe.copticomm.com/jujiaheDocument/H5/post/index.html" //外网正式
+//#define BASE_SHARE @"https://jujiahe.copticomm.com/jujiaheDocument/jujiaheuser/dailyShare/index.html"//外网正式
+
+//#define BASE_URL  @"http://172.16.103.230/app" //本地
+//#define BASE_H5_URL  @"http://172.16.21.31/jujiaheDocument/H5/post/index.html/" //本地
+#define BASE_H5_URL  @"http://172.16.21.31:8081/"
+#define basicUserName @"mobile"//basic认证 用户名
+#define basicPassword @"app"// basic认证 密码
+#ifdef DEBUG
+# define XMJLog(format, ...) NSLog((@"%s-"  format), __FUNCTION__, ##__VA_ARGS__);
+#else
+# define XMJLog(...);
+#endif
+
+#endif /* copooo_PrefixHeader_pch */
